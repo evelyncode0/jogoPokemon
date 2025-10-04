@@ -1,0 +1,16 @@
+<------------ RODAR ESSES COMANDOS PARA INSTALAR AS IMPORTAÇÕES ------------>
+para instalar a biblioteca pygames rode no terminal -> py -m pip install pygame ou apenas pip install pygame.
+para instalar a a biblioteca py -m pip install term-image ou apenas pip install term-image.
+para instalar a biblioteca colorama rode no terminal -> py -m pip install colorama
+
+<------------ COMANDOS PARA GERAR UM EXECUTÁVEL - PYINSTALL ------------>
+digite o comando para installar o pyinstall -> py -m pip install pyinstaller
+depois verifique se foi instalado -> py -m PyInstaller --version
+agora, entre na pasta onde esta o seu projeto -> cd caminho\para\sua\pasta
+use o comando para gerar um executavel do seu arquivo -> py -m PyInstaller --onefile --add-data "sons;sons" arquivoparaserexecutavel.py
+=> --onefile: cria um único arquivo .exe.
+=>  --add-data "sons;sons": adiciona a pasta sons no executável, para garantir que os sons estejam inclusos.
+=> arquivoparaserexecutavel.py: é o arquivo Python que você quer transformar em executável.
+
+------------------------------------- COMANDO QUE USEI PARA INSTALAR EXECUTAVEL
+py -m PyInstaller --onefile --add-data "sons;POKEMON/sons" batalhaPokemon.py
